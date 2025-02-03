@@ -1,7 +1,7 @@
 {
     "tray": {
         "icon-size": 21,
-        "spacing": 10
+        "spacing": 5
     },
     "clock": {
         "format": "TIME {:%H:%M}",
@@ -28,13 +28,17 @@
     },
     "cpu": {
         "format": "CPU {usage}%",
-        "tooltip": true
+        "tooltip": true,
+        "interval": 2
     },
     "memory": {
-        "format": "RAM {}%"
+        "format": "RAM {}%",
+        "tooltip": true,
+        "interval": 2
+
     },
     "network": {
-        "format-wifi": " ",
+        "format-wifi": "  {ipaddr}",
         "format-ethernet": " ",
         "format-disconnected": "⚠",
         "tooltip-format": "Connected to {ipaddr}",
@@ -43,16 +47,16 @@
     },
     "pulseaudio": {
         "format": "{icon}",
-        "format-muted": " ",
+        "format-muted": "",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": [" "]
         },
         "tooltip-format": "{volume}% volume",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-click-right": "pavucontrol"
     },
     "custom/power": {
-        "format": "⏻ ",
+        "format": "⏻  ",
         "tooltip": false,
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder

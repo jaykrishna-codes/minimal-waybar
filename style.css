@@ -28,7 +28,7 @@
 */
 
 * {
-    font-family: 'JetBrains Mono','Symbols Nerd Font', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-family: 'JetBrainsMono Nerd Font','Symbols Nerd Font', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
     font-size: 14px;
     font-weight: bolder;
 }
@@ -71,6 +71,12 @@ button {
     color: #89b4fa;
 }
 
+
+#workspaces button.active {
+    color: #cba6f7;
+    background-color: rgba(134, 108, 158, 0.541);
+}
+
 #workspaces button.focused {
     color: #cba6f7;
     background-color: rgba(134, 108, 158, 0.541);
@@ -92,8 +98,28 @@ button {
 #memory,
 #network,
 #clock,
-#pulseaudio 
-.tooltip {
+#pulseaudio {
     background-color: transparent;
+    color: #cdd6f4;
+    margin: 0 ;
+}
+
+#network {
+    color: #a6e3a1;
+}
+
+#cpu,#memory {
+    color: #fab387;
+}
+
+#custom-power {
+    padding-right: 10px;
+    font-size: 14px;
+    color: #f38ba8;
+}
+
+#tooltip {
+
+    background-color: #11111b;
     color: #cdd6f4;
 }

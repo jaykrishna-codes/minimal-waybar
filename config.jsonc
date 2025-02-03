@@ -5,8 +5,8 @@
     "height": 30, 
     "spacing": 25, 
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode"
+        "hyprland/workspaces",
+        "hyprland/mode"
     ],
     "modules-center": [
         "clock"
