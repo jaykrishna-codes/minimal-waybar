@@ -3,7 +3,7 @@
     "layer": "bottonm",
     "position": "top", 
     "height": 30, 
-    "spacing": 4, 
+    "spacing": 25, 
     "modules-left": [
         "sway/workspaces",
         "sway/mode"
